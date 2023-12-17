@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-include'../connection.php';
+// include'../connection.php'; 
 
 
 ?>
@@ -14,6 +14,6 @@ include'../connection.php';
     <title>Document</title>
 </head>
 <body>
-    
+    <p> testing </p>
 </body>
 </html>
