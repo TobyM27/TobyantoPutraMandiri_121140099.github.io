@@ -4,7 +4,7 @@ CREATE TABLE `nakama`(
     `id` INT AUTO_INCREMENT PRIMARY KEY,
     `karakter_favorit` VARCHAR(50) NOT NULL,
     `usia_karakter` INT(3) NOT NULL,
-    `devilfruit` VARCHAR(12) NOT NULL,
+    `devilfruit` VARCHAR(50) NOT NULL,
     `asal_krew` VARCHAR(50) NOT NULL,
     `nilai_bounty` BIGINT(255) NOT NULL
 );
