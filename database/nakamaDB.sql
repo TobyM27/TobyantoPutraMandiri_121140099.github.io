@@ -16,7 +16,7 @@ CREATE TABLE `pengguna` (
 )
 
 INSERT INTO `pengguna` (`username`, `password`) VALUES 
-(`Nakama`, `May5`);
+('Nakama', 'May5');
 
 -- memasuki beberapa data untuk tabel 'nakama'
 INSERT INTO `nakama` (`id`, `karakter_favorit`, `usia_karakter`, `devilfruit`, `asal_krew`, `nilai_bounty`) VALUES 
