@@ -1,6 +1,5 @@
 # Ujian Akhir Semester Pemrograman Web (UAS PemWeb)
 
-Biodata
 ## Nama     : Tobyanto Putra Mandiri
 ## NIM      : 121140099
 ## Kelas    : Pemrogramman Web RB 
