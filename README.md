@@ -1,4 +1,10 @@
-# TobyantoPutraMandiri_121140099.github.io
+# Ujian Akhir Semester Pemrograman Web (UAS PemWeb)
+
+## Biodata
+## Nama     : Tobyanto Putra Mandiri
+## NIM      : 121140099
+## Kelas    : Pemrogramman Web RB 
+
 Repository ini digunakan untuk pengumpulan UAS pemrograman web 
 
 ### Bagian 1: Client-side Programming (Bobot: 30%)
