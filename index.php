@@ -34,6 +34,15 @@ session_start();
         <button type="submit">Login</button>
     </form>
 
-    
+    <!-- berikut merupakan bagian untuk cookie atau state management -->
+    <script>
+        // memeriksa cookie 
+        function checkCookie() {
+            var userIdCookie = getCookie('user_id');
+            if(userIdCookie) {
+                window.location.href = ''
+            }
+        }
+    </script>
 </body>
 </html>
