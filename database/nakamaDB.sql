@@ -1,5 +1,5 @@
 -- Active: 1702814989817@@127.0.0.1@3308@nakamaDB
--- Berikut merupakan perintah untuk membuat struktur tabel 'nakama' 
+-- Berikut merupakan query untuk membuat struktur tabel 'nakama' 
 CREATE TABLE `nakama`(
     `id` INT AUTO_INCREMENT PRIMARY KEY,
     `karakter_favorit` VARCHAR(50) NOT NULL,
@@ -8,6 +8,12 @@ CREATE TABLE `nakama`(
     `asal_krew` VARCHAR(50) NOT NULL,
     `nilai_bounty` BIGINT(255) NOT NULL
 );
+
+-- Berikut merupakan query untuk membuat struktur tabel dari users yang akan menampung data credentials dari pengguna website
+CREATE TABLE `pengguna` (
+    `username` VARCHAR(50) NOT NULL,
+    `password` VARCHAR(50) NOT NULL
+)
 
 -- memasuki beberapa data untuk tabel 'nakama'
 INSERT INTO `nakama` (`id`, `karakter_favorit`, `usia_karakter`, `devilfruit`, `asal_krew`, `nilai_bounty`) VALUES 
