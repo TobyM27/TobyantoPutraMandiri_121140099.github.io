@@ -7,7 +7,11 @@ CREATE TABLE `nakama`(
     `nilai_bounty` BIGINT(255) NOT NULL
 );
 
--- INSERT INTO `nakama` ()
+INSERT INTO `nakama` (`id`, `karakter_favorit`, `usia_karakter`, `devilfruit`, `asal_krew`, `nilai_bounty`) VALUES 
+    (1,'Monkey D Luffy', 20, 'Gomu Gomu No Mi', 'Straw Hat Crew', 3000000000),
+    (2,'Monkey D Garp', 40, 'fruitless', 'Marine', 0);
+
+
 
 -- INSERT INTO `barang` (`seri`, `nama`, `merk`, `kategori`, `harga`, `stok`) VALUES
 -- ('AS-1234', 'ASUS VGA RTX 2060 ', 'ASUS', 'Komponen', 3500000, 32),
