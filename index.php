@@ -40,9 +40,49 @@ session_start();
         function checkCookie() {
             var userIdCookie = getCookie('user_id');
             if(userIdCookie) {
-                window.location.href = ''
+                window.location.href = 'nakama.php';
             }
         }
+
+        // Fungsi dibawah ini berguna untuk mengambil nilai cookie berdasarkan namanya yang telah tersimpan pada komputer pengguna
+        function getCookie(name) {
+            var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+            return match ? match[2] : null;  
+        }
+
+        checkCookie();
+        document.addEventListener("DOMContentLoaded", function () {
+            const loginForm = document.querySelector('form');
+
+            loginForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const username = document.getElementsByName("username")[0].value;
+                const password = document.getElementsByName("password")[0].value;
+
+                fetch('login.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams({
+                        'username': username,
+                        'password': password,
+                    }),
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Menetapkan cookie dan melakukan proses redirect
+                            document.cookie = "user_id=" + encodeURIComponent(data.user_id) + "; expires=" + new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000).toUTCString() + "; path=/";
+                            window.location.href = 'nakama.php';
+                        } else {
+                            // Jika gagal
+                            window.location.href = 'index.php';
+                        }
+                    });
+            });
+        });
     </script>
 </body>
 </html>
