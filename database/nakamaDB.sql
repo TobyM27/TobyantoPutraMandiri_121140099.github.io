@@ -1,3 +1,4 @@
+-- Active: 1702814989817@@127.0.0.1@3308@nakamaDB
 -- Berikut merupakan perintah untuk membuat struktur tabel 'nakama' 
 CREATE TABLE `nakama`(
     `id` INT AUTO_INCREMENT PRIMARY KEY,
@@ -11,4 +12,9 @@ CREATE TABLE `nakama`(
 -- memasuki beberapa data untuk tabel 'nakama'
 INSERT INTO `nakama` (`id`, `karakter_favorit`, `usia_karakter`, `devilfruit`, `asal_krew`, `nilai_bounty`) VALUES 
     (1,'Monkey D Luffy', 20, 'Gomu Gomu No Mi', 'Straw Hat Crew', 3000000000),
-    (2,'Monkey D Garp', 40, 'fruitless', 'Marine', 0);
+    (2,'Monkey D Garp', 40, 'fruitless', 'Marine', 0),
+    (3,'Roronoa Zoro', 21, 'fruitless', 'Straw Hat Crew', 320000000),
+    (4,'Nami', 22, 'fruitless', 'Straw Hat Crew', 66000000),
+    (5,'Boa Hancock', 29, 'Mero Mero no Mi', 'Kuja Pirates', 800000000),
+    (6,'Portgas D. Ace', 25, 'Mera Mera no Mi', 'Whitebeard Pirates', 550000000),
+    (7,'Franky', 34, 'fruitless', 'Straw Hat Crew', 94000000);
