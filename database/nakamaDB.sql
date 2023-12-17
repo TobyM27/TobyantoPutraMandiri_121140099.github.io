@@ -15,6 +15,9 @@ CREATE TABLE `pengguna` (
     `password` VARCHAR(50) NOT NULL
 )
 
+INSERT INTO `pengguna` (`username`, `password`) VALUES 
+(`Nakama`, `May5`);
+
 -- memasuki beberapa data untuk tabel 'nakama'
 INSERT INTO `nakama` (`id`, `karakter_favorit`, `usia_karakter`, `devilfruit`, `asal_krew`, `nilai_bounty`) VALUES 
     (1,'Monkey D Luffy', 20, 'Gomu Gomu No Mi', 'Straw Hat Crew', 3000000000),
